@@ -74,6 +74,22 @@ Este proceso de creación de la carpeta data y copiado de los arhivos, debe pode
 
 Nota: Busque dfs.blocksize y dfs.replication en http://<IP_Anfitrion>:9870/conf para encontrar los valores de tamaño de bloque y factor de réplica respectivamente entre otras configuraciones del sistema Hadoop.
 
+<property>
+<name>dfs.blocksize</name>
+<value>134217728</value>
+<final>false</final>
+<source>hdfs-default.xml</source>
+</property>
+
+<property>
+<name>dfs.replication</name>
+<value>3</value>
+<final>false</final>
+<source>hdfs-default.xml</source>
+</property>
+
+
+
 ## 2) Hive
 
 Se puede utilizar el entorno docker-compose-v2.yml
